@@ -1,0 +1,22 @@
+[project]
+name = "secret-santa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AliakseiYafremau", email = "aleksey.yafremau@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "aioadmin>=0.0.1",
+    "aiogram-dialog>=2.4.0",
+    "aiosqlite>=0.21.0",
+    "sqlalchemy>=2.0.44",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.2,<0.10.0"]
+build-backend = "uv_build"
+
+[project.scripts]
+run = "secret_santa.main:run"
